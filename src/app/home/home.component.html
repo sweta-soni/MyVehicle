@@ -1,0 +1,68 @@
+<p>home works!</p>
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Interiors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">exteriors</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">safety</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">comfort</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">entertainment</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+
+  <h4>MARUTI-SUZUKI S-PRESSO VARIANTS</h4>
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container-fluid">
+      
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">PETROL</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">CNG</a>
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+  </nav>
+  <div class= "grid">
+    <div class= "col-12">
+        <div class="row">
+              <div *ngFor="let items of carvariantDetails">
+                    <div class="col-2"> {{items.variant_id}}</div>
+                    <div class="col-1"> {{items.variant}}</div>
+                    <div class="col-1"> {{items.pro_name}}</div>
+                    <div class="col-2"> {{items.brand_name}}</div>
+                    <div class="col-2"> {{items.model_name}}</div>
+                    <div class="col-2"> {{items.exshowroom_price}}</div>
+                    <div class="col-2"> {{items.seo_url}}</div>
+                  </div>
+          </div>
+      </div>
+  </div>
+  
+
+  
